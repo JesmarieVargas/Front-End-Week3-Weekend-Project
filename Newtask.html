@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootStrap Layout</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="bootstrap.bundle.min.js"></script>
+
+<style>
+
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">Task Management Application</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/Task_management.html#dashboard">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/Dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/Details.html">Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/Login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container task-form">
+        
+      <h2 class="text-center mb-4">Add New Task</h2>
+      
+      <form>
+          <div class="input-group">
+              <label for="name">Task Name:</label>
+              <input type="name" class="form-control" placeholder="Enter task name">
+          </div>
+          
+          <br>
+          
+          <div class="input-group">
+              <label for="deadline">Task Deadline:</label>
+              <input type="email" class="form-control" placeholder="Enter task deadline">
+          </div>
+
+          <br>
+
+          <div class="form-group">
+              <label for="details">Task Details:</label>
+              <textarea class="form-control" rows="10" placeholder="Enter task details"></textarea>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+
+
+</body>
